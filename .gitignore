@@ -7,8 +7,5 @@
 # Ignore all but the 'WebContent' directory
 /.settings
 
-# Ignore downloadable asset libraries
-/WebContent/assets/bootstrap-3.1.1
-
 # Ignore other unneeded files.
 .project
