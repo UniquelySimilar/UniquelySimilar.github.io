@@ -7,7 +7,7 @@
     <title>Application Offline</title>
 
     <!-- Bootstrap -->
-    <link href="WebContent/assets/bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="WebContent/assets/bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
 		
     <!-- Custom styles for this template -->
     <link href="WebContent/assets/css/carousel.css" rel="stylesheet">
@@ -22,41 +22,88 @@
   <body>
 		<div class="container">
 		
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+			<div id="test-carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#test-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#test-carousel" data-slide-to="1"></li>
+					<li data-target="#test-carousel" data-slide-to="2"></li>
 				</ol>
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active" >
 						<img src="WebContent/assets/images/green902x500.jpg" alt="First Slide">
-						<!--<img src="holder.js/900x500/auto/sky/text:First Slide" alt="First Slide">-->
 						<div class="carousel-caption"><h1>Application currently offline.<h1></div>
 					</div>
 					<div class="item">
 						<img src="WebContent/assets/images/green902x500.jpg" alt="Second Slide">
-						<!--<img src="holder.js/900x500/auto/vine/text:Second slide" alt="Second Slide">-->
 						<div class="carousel-caption"><h1>Contact application owner for access.</h1></div>
 					</div>
 					<div class="item">
 						<img src="WebContent/assets/images/green902x500.jpg" alt="Third Slide">
-						<!--<img src="holder.js/900x500/auto/lava/text:Third slide" alt="Third Slide">-->
 						<div class="carousel-caption"><h1>Thank you for visiting.</h1></div>
 					</div>
 				</div>
 
 				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				<a class="left carousel-control" href="#test-carousel" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
 				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				<a class="right carousel-control" href="#test-carousel" data-slide="next">
 					<span class="glyphicon glyphicon-chevron-right"></span>
 				</a>
 			</div><!-- .carousel -->
+			
+			<button type="button" id="pause-resume-carousel-btn" class="btn btn-primary">Pause Slide Show</button>
+			<br />
+			<br />				
+			
+			<!-- Collapse example -->
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+			          Collapsible Group Item #1
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+			          Collapsible Group Item #2
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+			          Collapsible Group Item #3
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			</div>
 			
 		</div><!-- .container -->
 
@@ -64,7 +111,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="WebContent/assets/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+    <script src="WebContent/assets/bootstrap-3.1.1/js/bootstrap.js"></script>
+    
+    <!-- Any other JavaScript files -->
+    <script src="WebContent/assets/js/custom.js"></script>
 		
   </body>
 </html>
