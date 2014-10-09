@@ -1,0 +1,20 @@
+#green-yellow-grad {
+  background: -webkit-linear-gradient(#00A300, #2DD708); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#00A300, #2DD708); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#00A300, #2DD708); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#00A300, #2DD708); /* Standard syntax */
+	color: white;
+}
+/* previous second color: #2DD708 */
+
+#yellow-green-grad {
+  background: -webkit-linear-gradient(#2DD708, #00A300); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#2DD708, #00A300); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#2DD708, #00A300); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#2DD708, #00A300); /* Standard syntax */
+	color: white;
+}
+
+.transparent {
+	opacity: 0;
+}
