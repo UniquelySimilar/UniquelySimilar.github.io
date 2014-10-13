@@ -14,3 +14,7 @@
 	color: white;	/* Not working */
 	font-size: 24px;
 }
+
+.col-divider {
+	border-left: 2px solid #eeeeee;
+}
