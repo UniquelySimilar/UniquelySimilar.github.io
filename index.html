@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Tim Coveney Developer Info</title>
+		<title>Tim Coveney - Web Developer</title>
 
 		<!-- Bootstrap -->
 		<link href="WebContent/assets/css/themes/bootswatch-spacelab.css" rel="stylesheet">
@@ -25,11 +25,30 @@
 
 		<div class="container-fluid">
 
-			<!-- Header included via jQuery -->
-			<div id="header"></div>
+			<!-- Static navbar -->
+			<div class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/index.html">Tim Coveney</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li id="about-item"><a id="about-link" href="#">About</a></li>
+							<li id="skillset-item"><a id="skillset-link" href="#">Tech Skillset</a></li>
+							<li id="demo-apps-item"><a id="demo-apps-link" href="#">Demo Apps</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
 
-			<!-- Page specific content -->
-			<div class="row">
+			<!-- 'About' page content -->
+			<div id="about" class="row">
 				<div class="col-md-6">
 					<h2>Experienced Web Application Developer</h2>
 					<p>I have several years of web application development experience including:</p>
@@ -46,6 +65,78 @@
 					<p><b>Email: </b>tcemp@comcast.net</p>
 				</div>
 			</div><!-- .row -->
+
+			<!-- 'Skillset' page content -->
+			<div id="skillset" class="row">
+				<div class="col-md-6">
+					<h2>Technical Skillset</h2>
+					<ul>
+						<li><b>LANGUAGES:</b> Java/J2EE, Ruby, PHP</li>
+						<li><b>WEB UI:</b> HTML, CSS, JavaScript, jQuery, Bootstrap</li>
+						<li><b>WEB FRAMEWORKS:</b> Spring MVC, Rails, Laravel</li>
+						<li><b>DATABASES:</b> MySQL, PostgreSQL, SQL Server, Oracle</li>
+						<li><b>ORM:</b> Hibernate</li>
+						<li><b>APPLICATION/WEB SERVERS:</b> Apache, Phusion Passenger, Tomcat, JBoss</li>
+						<li><b>TEST TOOLS:</b> JUnit, soapUI</li>
+						<li><b>IDE/BUILD TOOLS:</b> Eclipse, NetBeans, Ant, Maven</li>
+						<li><b>OPERATING SYSTEMS:</b> Windows, Linux</li>
+						<li><b>SOURCE CONTROL:</b> Git, GitHub, Subversion</li>
+					</ul>
+
+		<table class="table table-bordered">
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>LANGUAGES</label></td>
+				<td class="col-md-4">Java/J2EE, Ruby, PHP</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>WEB UI</label></td>
+				<td class="col-md-4">HTML, CSS, JavaScript, jQuery, Bootstrap</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>WEB FRAMEWORKS</label></td>
+				<td class="col-md-4">Spring MVC, Rails, Laravel</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>DATABASES</label></td>
+				<td class="col-md-4">MySQL, PostgreSQL, SQL Server, Oracle</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>OBJECT RELATIONAL MAP</label></td>
+				<td class="col-md-4">Hibernate, Active Record, Eloquent</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>APPLICATION/WEB SERVERS</label></td>
+				<td class="col-md-4">Apache, Phusion Passenger, Tomcat, JBoss</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>TEST TOOLS</label></td>
+				<td class="col-md-4">JUnit, RSpec, soapUI</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>IDE/BUILD TOOLS</label></td>
+				<td class="col-md-4">Eclipse, NetBeans, Ant, Maven</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>OPERATING SYSTEMS</label></td>
+				<td class="col-md-4">Windows, Linux</td>
+			</tr>
+			<tr>
+				<td class="field-label col-md-2 active text-right"><label>SOURCE CONTROL</label></td>
+				<td class="col-md-4">Git, GitHub, Subversion</td>
+			</tr>
+		</table>
+
+
+				</div>
+			</div><!-- .row -->
+
+			<!-- 'Demo apps' page content -->
+			<div id="demo-apps" class="row">
+				<div class="col-md-6">
+					<h2>Demo Apps (PAGE UNDER CONSTRUCTION)</h2>
+				</div>
+			</div><!-- .row -->
+
 		</div><!-- .container -->
 
 		<!-- Footer -->
@@ -58,10 +149,5 @@
 
 		<!-- Other JavaScript -->
 		<script src="WebContent/assets/js/custom.js"></script>
-		<script>
-			$(function(){
-				$("#header").load("header.html"); 
-			});
-		</script>
 	</body>
 </html>
