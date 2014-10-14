@@ -10,9 +10,13 @@
     font-size: 20px;
 }
 
-.navbar-brand {
-	color: white;	/* Not working */
-	font-size: 24px;
+.navbar-inverse .navbar-brand {
+	font-size: 30px;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:hover {
+	color: #B0CAE3;
+/*	color: #C4E1FC;*/
 }
 
 .col-divider {
