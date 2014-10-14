@@ -40,17 +40,17 @@ function showDemoApps() {
 // Page load
 $(function() {
 	// Initialize menu itme click handlers
-	$("#about-link").click(function(event) {
+	$(".about-link").click(function(event) {
 		event.preventDefault();
 		showAbout();
 	});
 
-	$("#skillset-link").click(function(event) {
+	$(".skillset-link").click(function(event) {
 		event.preventDefault();
 		showSkillset();
 	});
 
-	$("#demo-apps-link").click(function(event) {
+	$(".demo-apps-link").click(function(event) {
 		event.preventDefault();
 		showDemoApps();
 	});
