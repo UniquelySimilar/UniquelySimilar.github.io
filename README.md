@@ -1,4 +1,4 @@
-# My Developer Website (UNDER CONSTRUCTION)
-Website listing my technical skills and experience.
+# My Developer Website
+Website listing my technical skills, experience, and links to my demo apps.
 
 URL: http://uniquelysimilar.github.io
