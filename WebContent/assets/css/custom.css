@@ -4,10 +4,10 @@
 .navbar-nav li a,
 .navbar-nav li a:hover
  {
-    line-height: 80px;
-    height: 80px;
-    padding-top: 0;
-    font-size: 20px;
+		line-height: 80px;
+		height: 80px;
+		padding-top: 0;
+		font-size: 20px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -21,4 +21,36 @@
 
 .col-divider {
 	border-left: 2px solid #eeeeee;
+}
+
+
+/* Unordered list */
+.icon-list li {
+	padding: 0 0 5px 20px;
+	display: block;
+	position: relative;
+}
+
+.icon-list li:before {
+	font-family: 'Glyphicons Halflings';
+	position: absolute;
+	left: 0px;
+	top:3px;
+	font-size:80%
+}
+
+.chevron-right li:before {
+	content: '\e080';
+}
+
+.cog li:before {
+	content: "\e019";
+}
+
+.certificate li:before {
+	content: "\e124";
+}
+
+.hand-right li:before {
+	content: "\e127";
 }
