@@ -59,6 +59,7 @@ $(function() {
 	showAbout();
 });
 
+
 // Pause/resume carousel
 /*
 $( "#pause-resume-carousel-btn" ).click(function() {
