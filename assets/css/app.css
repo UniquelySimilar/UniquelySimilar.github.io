@@ -1,3 +1,8 @@
+/* Body */
+body {
+	background-color: #f5f5f5;
+}
+
 /* Navbar */
 
 .navbar-brand,
@@ -19,8 +24,23 @@
 /*	color: #C4E1FC;*/
 }
 
+/* Content boxes */
+.content-div {
+	border:	1px solid #dddddd;
+	background-color: #ffffff;
+}
+
+.about-div {
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+.pad-left-fifteen {
+	padding-left: 15px;
+}
+
 .col-divider {
-	border-left: 2px solid #eeeeee;
+	border-left: 2px solid #dddddd;
 }
 
 
@@ -53,4 +73,14 @@
 
 .hand-right li:before {
 	content: "\e127";
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+.content-div {
+	margin-bottom: 20px;
+}
+
+.about-div {
+	padding-right: 0;
 }
