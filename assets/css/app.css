@@ -4,6 +4,9 @@ body {
 }
 
 /* Navbar */
+.navbar {
+	border-radius: 0;
+}
 
 .navbar-brand,
 .navbar-nav li a,
