@@ -16,6 +16,11 @@ body {
 		height: 80px;
 		padding-top: 0;
 		font-size: 20px;
+		font-weight: bold;
+}
+
+.navbar-brand {
+	padding-right: 30px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -23,8 +28,8 @@ body {
 }
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-brand:hover {
-	color: #B0CAE3;
-/*	color: #C4E1FC;*/
+	color: #dddddd;
+/*	color: #B0CAE3; original */
 }
 
 /* Content boxes */
@@ -33,10 +38,23 @@ body {
 	background-color: #ffffff;
 }
 
-.about-div {
+.exp-div {
 	padding-left: 0;
 	padding-right: 15px;
 }
+
+/* Keep text from wrapping under floated image */
+.contact-div:after { content: ''; clear: both; visibility: hidden; }
+
+.contact-div img {
+		float: left;
+		margin-right: 10px;
+}
+
+.contact-div p {
+	overflow: hidden;
+}
+
 
 .pad-left-fifteen {
 	padding-left: 15px;
@@ -84,6 +102,6 @@ body {
 	margin-bottom: 20px;
 }
 
-.about-div {
+.exp-div {
 	padding-right: 0;
 }
