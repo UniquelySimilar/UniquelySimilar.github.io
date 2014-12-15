@@ -1,85 +1,49 @@
-// Display 'About' content, hide other content, and set menu option to 'active'
+// Display specific content (div), hide other content (div), and set menu option (link) class to 'active'
+function processContent(selectorsToHide, selectorToShow) {
+	for (i = 0; i < selectorsToHide.length; i++) {
+		$(selectorsToHide[i]).hide();
+		$(selectorsToHide[i] + "-item").removeClass("active");
+	}
+
+	$(selectorToShow).show();
+	$(selectorToShow + "-item").addClass("active");
+}
+
 function showAbout() {
 	//console.log("'showAbout()' called");
-
-	$("#about").show();
-	$("#skillset").hide(); 
-	$("#demo-apps").hide();
-	$("#interests").hide();
-
-	$("#skillset-item").removeClass("active");
-	$("#demo-apps-item").removeClass("active");
-	$("#interests-item").removeClass("active");
-	$("#about-item").addClass("active");
+	processContent(["#skillset", "#demo-apps", "#interests"], "#about");
 }
 
-// Display 'Skillset' content, hide other content, and set menu option to 'active'
 function showSkillset() {
 	//console.log("'showSkillset()' called");
-	
-	$("#skillset").show();
-	$("#about").hide();
-	$("#demo-apps").hide();
-	$("#interests").hide();
-
-	$("#about-item").removeClass("active");
-	$("#demo-apps-item").removeClass("active");
-	$("#interests-item").removeClass("active");
-	$("#skillset-item").addClass("active");
+	processContent(["#about", "#demo-apps", "#interests"], "#skillset");
 }
 
-// Display 'Demo Apps' content, hide other content, and set menu option to 'active'
 function showDemoApps() {
 	//console.log("'showDemoApps()' called");
-	
-	$("#demo-apps").show();
-	$("#skillset").hide();
-	$("#about").hide();
-	$("#interests").hide();
-
-	$("#about-item").removeClass("active");
-	$("#skillset-item").removeClass("active");
-	$("#interests-item").removeClass("active");
-	$("#demo-apps-item").addClass("active");
+	processContent(["#skillset", "#about", "#interests"], "#demo-apps");
 }
 
-// Display 'Interests' content, hide other content, and set menu option to 'active'
 function showInterests() {
 	//console.log("'showInterests()' called");
-	
-	$("#interests").show();
-	$("#demo-apps").hide();
-	$("#skillset").hide();
-	$("#about").hide();
+	processContent(["#demo-apps", "#skillset", "#about"], "#interests");
+}
 
-	$("#about-item").removeClass("active");
-	$("#skillset-item").removeClass("active");
-	$("#demo-apps-item").removeClass("active");
-	$("#interests-item").addClass("active");
+// Initialize menu item (link) click handlers
+function initMenuClick(linkSelector, showFunction) {
+	$(linkSelector).click(function(event) {
+		event.preventDefault();
+		showFunction();
+	});
 }
 
 // Page load
 $(function() {
-	// Initialize menu itme click handlers
-	$(".about-link").click(function(event) {
-		event.preventDefault();
-		showAbout();
-	});
-
-	$(".skillset-link").click(function(event) {
-		event.preventDefault();
-		showSkillset();
-	});
-
-	$(".demo-apps-link").click(function(event) {
-		event.preventDefault();
-		showDemoApps();
-	});
-
-	$(".interests-link").click(function(event) {
-		event.preventDefault();
-		showInterests();
-	});
+	// Initialize menu item (link) click handlers
+	initMenuClick(".about-link", showAbout);
+	initMenuClick(".skillset-link", showSkillset);
+	initMenuClick(".demo-apps-link", showDemoApps);
+	initMenuClick(".interests-link", showInterests);
 
 	// Display 'About' content on initial page load
 	showAbout();
