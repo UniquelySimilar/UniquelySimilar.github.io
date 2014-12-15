@@ -5,9 +5,11 @@ function showAbout() {
 	$("#about").show();
 	$("#skillset").hide(); 
 	$("#demo-apps").hide();
+	$("#interests").hide();
 
 	$("#skillset-item").removeClass("active");
 	$("#demo-apps-item").removeClass("active");
+	$("#interests-item").removeClass("active");
 	$("#about-item").addClass("active");
 }
 
@@ -18,9 +20,11 @@ function showSkillset() {
 	$("#skillset").show();
 	$("#about").hide();
 	$("#demo-apps").hide();
+	$("#interests").hide();
 
 	$("#about-item").removeClass("active");
 	$("#demo-apps-item").removeClass("active");
+	$("#interests-item").removeClass("active");
 	$("#skillset-item").addClass("active");
 }
 
@@ -31,10 +35,27 @@ function showDemoApps() {
 	$("#demo-apps").show();
 	$("#skillset").hide();
 	$("#about").hide();
+	$("#interests").hide();
 
 	$("#about-item").removeClass("active");
 	$("#skillset-item").removeClass("active");
+	$("#interests-item").removeClass("active");
 	$("#demo-apps-item").addClass("active");
+}
+
+// Display 'Interests' content, hide other content, and set menu option to 'active'
+function showInterests() {
+	//console.log("'showInterests()' called");
+	
+	$("#interests").show();
+	$("#demo-apps").hide();
+	$("#skillset").hide();
+	$("#about").hide();
+
+	$("#about-item").removeClass("active");
+	$("#skillset-item").removeClass("active");
+	$("#demo-apps-item").removeClass("active");
+	$("#interests-item").addClass("active");
 }
 
 // Page load
@@ -53,6 +74,11 @@ $(function() {
 	$(".demo-apps-link").click(function(event) {
 		event.preventDefault();
 		showDemoApps();
+	});
+
+	$(".interests-link").click(function(event) {
+		event.preventDefault();
+		showInterests();
 	});
 
 	// Display 'About' content on initial page load

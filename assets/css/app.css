@@ -121,6 +121,13 @@ body {
 	content: "\e127";
 }
 
+/* Miscellaneous */
+.posted-date {
+	color: #5c005c;
+	font-style: italic;
+	font-size: 70%;
+}
+
 /* Media queries */
 @media (max-width: 992px) {
 .content-div {
