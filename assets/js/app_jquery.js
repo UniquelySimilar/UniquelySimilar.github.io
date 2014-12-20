@@ -11,22 +11,27 @@ function processContent(selectorsToHide, selectorToShow) {
 
 function showAbout() {
 	//console.log("'showAbout()' called");
-	processContent(["#skillset", "#demo-apps", "#interests"], "#about");
+	processContent(["#skillset", "#demo-apps", "#interests", "#contact"], "#about");
 }
 
 function showSkillset() {
 	//console.log("'showSkillset()' called");
-	processContent(["#about", "#demo-apps", "#interests"], "#skillset");
+	processContent(["#about", "#demo-apps", "#interests", "#contact"], "#skillset");
 }
 
 function showDemoApps() {
 	//console.log("'showDemoApps()' called");
-	processContent(["#skillset", "#about", "#interests"], "#demo-apps");
+	processContent(["#skillset", "#about", "#interests", "#contact"], "#demo-apps");
 }
 
 function showInterests() {
 	//console.log("'showInterests()' called");
-	processContent(["#demo-apps", "#skillset", "#about"], "#interests");
+	processContent(["#demo-apps", "#skillset", "#about", "#contact"], "#interests");
+}
+
+function showContact() {
+	//console.log("'showContact()' called");
+	processContent(["#demo-apps", "#skillset", "#about", "#interests"], "#contact");
 }
 
 // Initialize menu item (link) click handlers
@@ -44,6 +49,7 @@ $(function() {
 	initMenuClick(".skillset-link", showSkillset);
 	initMenuClick(".demo-apps-link", showDemoApps);
 	initMenuClick(".interests-link", showInterests);
+	initMenuClick(".contact-link", showContact);
 
 	// Display 'About' content on initial page load
 	showAbout();
