@@ -121,6 +121,23 @@ body {
 	content: "\e127";
 }
 
+/* Contact form */
+.form-horizontal .control-label {
+	text-align:left;
+}
+
+.validation-err {
+	color:	red;
+}
+
+.submit-success {
+	color:	green;
+}
+
+.big-text {
+	font-size: 130%;
+}
+
 /* Miscellaneous */
 .posted-date {
 	color: #5c005c;

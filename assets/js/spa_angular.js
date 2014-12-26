@@ -1,5 +1,3 @@
-// app_angular.js
-
 // create the application module
 var devInfoApp = angular.module('devInfoApp', ['ngRoute']);
 
