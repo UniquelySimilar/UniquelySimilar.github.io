@@ -11,6 +11,8 @@ contactApp.controller('ContactController', function($scope, $http) {
 			success(function(data, status, headers, config) {
 				// this callback will be called asynchronously when the response is available
 				$scope.status = status;
+				$scope.newContactName = $scope.contact.name;
+				//console.log("New contact name: " + $scope.newContactName);
 				$scope.contact = {};
 				$scope.success = true;
 				$scope.errors = "";
