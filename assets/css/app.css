@@ -1,5 +1,5 @@
 html { 
-  background: url(../images/galaxy_1920x1200.jpg) no-repeat center center fixed; 
+  background: url(../images/galaxy_1228x768.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -143,6 +143,10 @@ body {
 	color: #5c005c;
 	font-style: italic;
 	font-size: 70%;
+}
+
+.hide {
+	display: none;
 }
 
 /* Media queries */

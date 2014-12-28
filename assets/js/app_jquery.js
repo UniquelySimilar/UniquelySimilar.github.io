@@ -5,7 +5,7 @@ function processContent(selectorsToHide, selectorToShow) {
 		$(selectorsToHide[i] + "-item").removeClass("active");
 	}
 
-	$(selectorToShow).show();
+	$(selectorToShow).show().removeClass("hide");
 	$(selectorToShow + "-item").addClass("active");
 }
 
