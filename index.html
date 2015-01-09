@@ -7,11 +7,11 @@
 		<title>Tim Coveney - Web Developer</title>
 
 		<!-- Bootstrap -->
-		<link href="assets/lib/bootswatch/css/bootswatch-spacelab.css" rel="stylesheet">
-		<!--<link href="WebContent/assets/bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">-->
+		<!--<link href="assets/lib/bootswatch/css/bootswatch-spacelab.css" rel="stylesheet">-->
+		<link href="assets/lib/bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Other CSS -->
-		<link rel="stylesheet" href="assets/css/app.css">
+		<link rel="stylesheet" href="assets/css/clear.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,58 +21,63 @@
 		<![endif]-->
 
 	</head>
-	<body class="transparent">
+	<body>
+	<div id="heading">
+		<div id="heading-title">
+			<h1>Tim Coveney - Web Developer</h1>
+		</div>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--<a class="navbar-brand" href="#">Brand</a>-->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li id="about-item"><a class="about-link" href="#">ABOUT</a></li>
+						<li id="skillset-item"><a class="skillset-link" href="#">TECH SKILLSET</a></li>
+						<li id="demo-apps-item"><a class="demo-apps-link" href="#">DEMO APPS</a></li>
+						<li id="interests-item"><a class="interests-link" href="#">INTERESTS</a></li>
+						<li id="contact-item"><a class="contact-link" href="#">CONTACT</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>
 
 		<div class="container">
 
-			<!-- Static navbar -->
-			<div class="navbar navbar-inverse" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<span class="navbar-brand" >Tim Coveney</span>
-						<!--<a class="navbar-brand" href="/index.html" style="color: white;">Tim Coveney</a>-->
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li id="about-item"><a class="about-link" href="#">About</a></li>
-							<li id="skillset-item"><a class="skillset-link" href="#">Tech Skillset</a></li>
-							<li id="demo-apps-item"><a class="demo-apps-link" href="#">Demo Apps</a></li>
-							<li id="interests-item"><a class="interests-link" href="#">Interests</a></li>
-							<li id="contact-item"><a class="contact-link" href="#">Contact</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</div><!-- .navbar -->
-
-
 			<!-- *** 'About' page content *** -->
 			<div id="about" class="hide">
-				<div class="col-md-6 exp-div">
-					<div class="content-div pad-left-fifteen pad-right-fifteen">
+				<div class="col-md-8 big-font">
 						<h3>Experienced Web Application Developer</h3>
 						<p>I have several years of web application development experience including:</p>
 						<ul class="list-unstyled icon-list chevron-right">
 							<li>Java/J2EE</li>
 							<li>Ruby on Rails</li>
 							<li>PHP/Laravel</li>
+							<li>JavaScript</li>
+							<li>HTML/CSS</li>
 						</ul>
 						<p>See <a class="skillset-link" href="#">Tech Skillset</a> for a complete list.</p>
 						<p>See <a class="demo-apps-link" href="#">Demo Apps</a> for links to my demonstration applications.</p>
-						<p>My past experience has generally involved mid-tier/backend development.  I am currently focusing on full stack.</p>
-						<p>I am seeking contract/contract-to-hire employment with small to medium sized companies.</p>
-					</div>
+						<p>I am currently focusing on full stack development, having previously focused on mid-tier/backend development.</p>
+						<p>My preference is contract/contract-to-hire employment with small to medium sized companies.  However, I am open to discussing any potentially interesting opportunity.</p>
 				</div>
-				<div class="col-md-6 content-div contact-div" >
+				<div class="col-md-offset-1 col-md-3" id="about-tim">
 					<h3>About Tim</h3>
 					<img src="assets/images/tim_cubicle.jpg" alt="Tim Coveney">
 					<p>
-						Originally from Dallas, Texas, with a BSEE from UT Austin, I have lived in Colorado for about 15 years.&nbsp;&nbsp;Played guitar in blues/rock garage bands back in the day.&nbsp;&nbsp;Used to ski occasionally, but haven't in a while.
+						Originally from Dallas, Texas, with a BSEE from UT Austin, I have lived in Colorado for about 15 years.&nbsp;&nbsp;Played guitar in blues/rock garage bands back in the day.&nbsp;&nbsp;Ski occasionally.
 					</p>
 					<p>
 						I'm interested in topics like conscious business, social entrepreneurship, and sustainability.
@@ -85,7 +90,6 @@
 					</p>
 				</div>
 			</div><!-- #about -->
-
 
 			<!-- *** 'Skillset' page content *** -->
 			<div id="skillset" class="hide">

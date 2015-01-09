@@ -1,0 +1,129 @@
+/* clear.css */
+
+#heading {
+	background-image: url("../images/drop-of-water-crop-top-1366x151.jpg");
+	background-repeat: no-repeat;
+}
+
+#heading-title{
+	text-align: center;
+	color: white;
+}
+
+#heading-title h1 {
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+/* navbar */
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	font-size: 150%;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;	
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: black;	
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: black;
+}
+
+/* Nav tabs */
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus {
+	background-color: #f5f5f5;
+}
+
+.tab-pane ul li {
+	font-size: 125%;
+}
+
+/* About */
+#about-tim img {
+	margin-bottom: 10px;
+}
+
+/* Unordered list */
+.icon-list li {
+	padding: 0 0 5px 20px;
+	display: block;
+	position: relative;
+}
+
+.icon-list li:before {
+	font-family: 'Glyphicons Halflings';
+	position: absolute;
+	left: 0px;
+	top:3px;
+	font-size:80%
+}
+
+.chevron-right li:before {
+	content: '\e080';
+}
+
+.cog li:before {
+	content: "\e019";
+}
+
+.certificate li:before {
+	content: "\e124";
+}
+
+.hand-right li:before {
+	content: "\e127";
+}
+
+/* Contact form */
+.form-horizontal .control-label {
+	text-align:left;
+}
+
+.validation-err {
+	color:	red;
+}
+
+.submit-success {
+	color:	green;
+}
+
+/* Miscellaneous */
+.big-font {
+	font-size: 125%;
+}
+
+.posted-date {
+	color: #5c005c;
+	font-style: italic;
+	font-size: 70%;
+}
+
+.hide {
+	display: none;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+	#about-tim {
+		font-size: 125%;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-default {
+		background-color: #4078D9;
+	}
+}
