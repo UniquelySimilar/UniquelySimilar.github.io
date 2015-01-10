@@ -52,6 +52,10 @@
 }
 
 /* About */
+#experience img {
+	margin-right: 80px;
+}
+
 #about-tim img {
 	margin-bottom: 10px;
 }
@@ -85,6 +89,12 @@
 
 .hand-right li:before {
 	content: "\e127";
+}
+
+/* Tab control */
+.tab-pane ul {
+	display: table;
+	margin: 0 auto;
 }
 
 /* Contact form */
