@@ -63,11 +63,13 @@
 						<p>I have several years of web application development experience including:</p>
 						<img src="assets/images/web_tools.jpg" alt="Web Tools" style="vertical-align: top">
 						<ul class="list-unstyled icon-list chevron-right" style="display: inline-block">
-							<li>Java/J2EE</li>
+							<li>Java/J2EE/Spring MVC</li>
 							<li>Ruby on Rails</li>
 							<li>PHP/Laravel</li>
-							<li>JavaScript</li>
+							<li>JavaScript/jQuery/AngularJS</li>
 							<li>HTML/CSS</li>
+							<li>Database</li>
+							<li>Web Services</li>
 						</ul>
 						<p>See <a class="skillset-link" href="#">Tech Skillset</a> for a complete list.</p>
 						<p>See <a class="demo-apps-link" href="#">Demo Apps</a> for links to my demonstration applications.</p>
@@ -101,7 +103,7 @@
 					<ul class="nav nav-tabs" role="tablist">
 						<li class="active"><a href="#languages" role="tab" data-toggle="tab">Languages</a></li>
 						<li><a href="#web-ui" role="tab" data-toggle="tab">Web UI</a></li>
-						<li><a href="#web-frameworks" role="tab" data-toggle="tab">Web Frameworks</a></li>
+						<li><a href="#web-frameworks" role="tab" data-toggle="tab">Frameworks</a></li>
 						<li><a href="#databases" role="tab" data-toggle="tab">DB</a></li>
 						<li><a href="#orm" role="tab" data-toggle="tab">ORM</a></li>
 						<li><a href="#app-web-servers" role="tab" data-toggle="tab">App/Web Servers</a></li>
@@ -160,8 +162,7 @@
 						<div class="tab-pane" id="app-web-servers">
 							<br />
 							<ul class="list-unstyled icon-list cog">
-								<li>Apache</li>
-								<li>Phusion Passenger</li>
+								<li>Apache/Phusion Passenger</li>
 								<li>Tomcat</li>
 								<li>JBoss</li>
 							</ul>
@@ -314,7 +315,7 @@
 
 			<!-- *** 'Contact' page content *** -->
 			<div id="contact" class="hide" data-ng-app="contactApp">
-				<div class="col-md-6 col-md-offset-3 content-div" data-ng-controller="ContactController">
+				<div class="col-md-6 col-md-offset-3" data-ng-controller="ContactController">
 					<h3>Contact</h3>
 
 					<div class="alert alert-success" role="alert" data-ng-show="success">
@@ -361,6 +362,8 @@
 						<input type="submit" id="submit" value="Submit Contact" class="btn btn-primary" data-ng-disabled="inProcess"/>
 						</p>
 					</form>
+
+					<span>(Submitted to <a href="http://www.mailgun.com/" target="_blank">Mailgun Email Service</a> via my RESTful web service.)</span>
 
 					<!--
 					<iframe src="http://www.qontacto.com/f/5494b40ba2f19c73c1000030" data-aem="tcemp@comcast.net" width="100%" height="459px" style="width:100%;height:459px;border:0;"></iframe>
