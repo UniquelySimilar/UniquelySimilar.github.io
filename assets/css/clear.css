@@ -97,6 +97,12 @@
 	margin: 0 auto;
 }
 
+.tab-container {
+	padding: 10px;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+}
+
 /* Contact form */
 .form-horizontal .control-label {
 	text-align:left;
