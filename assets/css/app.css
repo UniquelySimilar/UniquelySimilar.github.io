@@ -22,19 +22,19 @@
 	font-size: 150%;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	background-color: transparent;
-	color: black;
-}
-
 .navbar-default .navbar-nav > li > a {
 	color: white;	
 }
 
 .navbar-default .navbar-nav > li > a:hover {
 	color: black;	
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: black;
 }
 
 /* Dropdown menu */
@@ -46,30 +46,29 @@
 	color: black;
 }
 
-ul.dropdown-menu
+.dropdown-menu
 {
 	background-color: #4078D9;
 }
 
-
-ul.dropdown-menu > li > a,
-ul.dropdown-menu > li > a:hover,
-ul.dropdown-menu > li > a:focus {
-	background-color: transparent;
-}
-
-ul.dropdown-menu > li > a {
+.dropdown-menu > li > a {
 	color: white;
 }
 
-ul.dropdown-menu > .active > a,
-ul.dropdown-menu > .active > a:hover,
-ul.dropdown-menu > .active > a:focus {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
 	color: black;
 }
 
-ul.dropdown-menu > li > a:hover,
-ul.dropdown-menu > li > a:focus {
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	background-color: transparent;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
 	color: black;
 }
 
