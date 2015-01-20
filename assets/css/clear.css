@@ -26,6 +26,7 @@
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
+	color: black;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -36,8 +37,39 @@
 	color: black;	
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus {
+/* Dropdown menu */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus
+{
+	background-color: transparent;
+	color: black;
+}
+
+ul.dropdown-menu
+{
+	background-color: #4078D9;
+}
+
+
+ul.dropdown-menu > li > a,
+ul.dropdown-menu > li > a:hover,
+ul.dropdown-menu > li > a:focus {
+	background-color: transparent;
+}
+
+ul.dropdown-menu > li > a {
+	color: white;
+}
+
+ul.dropdown-menu > .active > a,
+ul.dropdown-menu > .active > a:hover,
+ul.dropdown-menu > .active > a:focus {
+	color: black;
+}
+
+ul.dropdown-menu > li > a:hover,
+ul.dropdown-menu > li > a:focus {
 	color: black;
 }
 

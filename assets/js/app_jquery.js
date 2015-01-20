@@ -5,33 +5,46 @@ function processContent(selectorsToHide, selectorToShow) {
 		$(selectorsToHide[i] + "-item").removeClass("active");
 	}
 
+	// Special processing for drop down menu
+	$("#misc-ui-item").removeClass("active");
+	$("#add-remove-images").removeClass("active");
+
 	$(selectorToShow).show().removeClass("hide");
 	$(selectorToShow + "-item").addClass("active");
 }
 
 function showAbout() {
 	//console.log("'showAbout()' called");
-	processContent(["#skillset", "#demo-apps", "#interests", "#contact"], "#about");
+	processContent(["#skillset", "#demo-apps", "#interests", "#add-remove-images", "#contact"], "#about");
 }
 
 function showSkillset() {
 	//console.log("'showSkillset()' called");
-	processContent(["#about", "#demo-apps", "#interests", "#contact"], "#skillset");
+	processContent(["#about", "#demo-apps", "#interests", "#add-remove-images", "#contact"], "#skillset");
 }
 
 function showDemoApps() {
 	//console.log("'showDemoApps()' called");
-	processContent(["#skillset", "#about", "#interests", "#contact"], "#demo-apps");
+	processContent(["#skillset", "#about", "#interests", "#add-remove-images", "#contact"], "#demo-apps");
 }
 
 function showInterests() {
 	//console.log("'showInterests()' called");
-	processContent(["#demo-apps", "#skillset", "#about", "#contact"], "#interests");
+	processContent(["#demo-apps", "#skillset", "#about", "#add-remove-images", "#contact"], "#interests");
+}
+
+function showAddRemoveImages() {
+	//console.log("'showAddRemoveImages()' called");
+	processContent(["#demo-apps", "#skillset", "#about", "#interests", "#contact"], "#add-remove-images");
+
+	// Special processing for drop down menu
+	$("#misc-ui-item").addClass("active");
+	$("#add-remove-images").addClass("active");
 }
 
 function showContact() {
 	//console.log("'showContact()' called");
-	processContent(["#demo-apps", "#skillset", "#about", "#interests"], "#contact");
+	processContent(["#demo-apps", "#skillset", "#about", "#interests", "#add-remove-images"], "#contact");
 }
 
 // Initialize menu item (link) click handlers
@@ -49,6 +62,7 @@ $(function() {
 	initMenuClick(".skillset-link", showSkillset);
 	initMenuClick(".demo-apps-link", showDemoApps);
 	initMenuClick(".interests-link", showInterests);
+	initMenuClick(".add-remove-images-link", showAddRemoveImages);
 	initMenuClick(".contact-link", showContact);
 
 	// Display 'About' content on initial page load
