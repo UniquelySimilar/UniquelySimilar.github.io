@@ -69,6 +69,41 @@ $(function() {
 	showAbout();
 });
 
+/* Add/remove images processing */
+var ajax_url = "../../misc_pages/image_container.html";
+var img_count = 1;
+var image_html = "<p>Uninitialized image HTML</p>";
+
+// Get the image div HTML
+var jqxhr = $.get( ajax_url, function(data) {
+	//console.log("jQuery 'get()' succeeded." );
+	image_html = data;
+	//console.log(image_html);
+})
+.fail( function() {
+	console.error("ERROR: jQuery 'get()' failed." );
+});
+
+//Create 'Add' button functionality
+$( '#add-image' ).click( function() {
+	var btn_id = "btn-" + img_count;
+
+	$('#images-div').append(image_html)
+	.find('button').last().attr('id', btn_id);
+
+	$('#images-div').find('.image-title').last().text('Image ' + img_count);
+
+	$("#" + btn_id).click( function() {
+		$(this).parent().parent().remove();
+	});
+	img_count++;
+});
+
+// Create 'Reset' button functionality
+$( '#reset-page' ).click( function() {
+	$('#images-div').empty();
+	img_count = 1;
+});
 
 // Pause/resume carousel
 /*
