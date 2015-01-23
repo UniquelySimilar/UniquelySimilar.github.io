@@ -70,7 +70,7 @@ $(function() {
 });
 
 /* Add/remove images processing */
-var ajax_url = "../../misc_pages/image_container.html";
+var ajax_url = "../../pages/ajax/image_container.html";
 var img_count = 1;
 var image_html = "<p>Uninitialized image HTML</p>";
 
