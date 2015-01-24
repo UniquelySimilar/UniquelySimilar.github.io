@@ -13,9 +13,8 @@ function processContent(selectorsToHide, selectorToShow) {
 	$(selectorToShow + "-item").addClass("active");
 }
 
-// Initialize AJAX URLs
+// Initialize AJAX content path
 var content_ajax_path = "../../pages/ajax/";
-var imageContainerUrl = "../../pages/ajax/image_container.html";
 
 // Initialize AJAX content
 // UPDATE: Based on my reading, can not initialize a global variable from a callback.
@@ -23,10 +22,16 @@ var imageContainerUrl = "../../pages/ajax/image_container.html";
 function getAndShowAjaxContent(url) {
 	$.get(url)
 	.done( function(data) {
-		console.log("jQuery 'get()' succeeded." );
-		console.log(data);
+		//console.log("jQuery 'get()' succeeded." );
+		//console.log(data);
 
 		$('#main').empty().append(data);
+
+		// On 'Add/Remove Images' page, bind buttons after load
+		if ( url.indexOf('add_remove_images') != -1 ) {
+			bindAddButtonClick();
+			bindResetButtonClick();
+		}
 	})
 	.fail( function() {
 		console.error("ERROR: jQuery 'get()' failed." );
@@ -90,12 +95,11 @@ $(function() {
 });
 
 /* Add/remove images processing */
-var ajax_url = "../../pages/ajax/image_container.html";
 var img_count = 1;
 var image_html = "<p>Uninitialized image HTML</p>";
 
 // Get the image div HTML
-var jqxhr = $.get(ajax_url)
+$.get(content_ajax_path + "image_container.html")
 .done( function(data) {
 	//console.log("jQuery 'get()' succeeded." );
 	image_html = data;
@@ -105,26 +109,29 @@ var jqxhr = $.get(ajax_url)
 	console.error("ERROR: jQuery 'get()' failed." );
 });
 
-//Create 'Add' button functionality
-$( '#add-image' ).click( function() {
-	var btn_id = "btn-" + img_count;
+// Bind 'Add' button on 'Add/Remove Images' page
+function bindAddButtonClick() {
+	$( '#add-image' ).click( function() {
+		var btn_id = "btn-" + img_count;
+		$('#images-div').append(image_html)
+		.find('button').last().attr('id', btn_id);
 
-	$('#images-div').append(image_html)
-	.find('button').last().attr('id', btn_id);
+		$('#images-div').find('.image-title').last().text('Image ' + img_count);
 
-	$('#images-div').find('.image-title').last().text('Image ' + img_count);
+		$("#" + btn_id).click( function() {
+			$(this).parent().parent().remove();
+		});
+		img_count++;
+	});	
+}
 
-	$("#" + btn_id).click( function() {
-		$(this).parent().parent().remove();
+// Bind 'Reset' button on 'Add/Remove Images' page
+function bindResetButtonClick() {
+	$( '#reset-page' ).click( function() {
+		$('#images-div').empty();
+		img_count = 1;
 	});
-	img_count++;
-});
-
-// Create 'Reset' button functionality
-$( '#reset-page' ).click( function() {
-	$('#images-div').empty();
-	img_count = 1;
-});
+}
 
 // Pause/resume carousel
 /*
