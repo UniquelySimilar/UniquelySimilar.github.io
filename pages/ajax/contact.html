@@ -1,0 +1,58 @@
+			<!-- *** 'Contact' page content *** -->
+			<div id="contact" data-ng-app="contactApp">
+				<div class="col-md-6 col-md-offset-3" data-ng-controller="ContactController">
+					<h3>Contact</h3>
+
+					<div class="alert alert-success" role="alert" data-ng-show="success">
+						Thanks <b>{{ newContactName }}</b>!&nbsp;&nbsp;If you don't hear from me within a couple of days, please email me directly at <b>tcemp@comcast.net</b>
+					</div>
+
+					<div class="alert alert-danger" role="alert" data-ng-show="errors.exception">
+						An error was detected from the server.  Please email me directly at <b>tcemp@comcast.net</b>
+					</div>
+
+					<span>Please fill out and submit this form, or email directly at: <b>tcemp@comcast.net</b></span>
+
+					<div data-ng-show="showDebug">
+					Response status: {{ status }}<br />
+					Errors: {{ errors }}
+					</div>
+
+					<form data-ng-submit="processContact()" class="form-horizontal">
+						<div class="form-group">
+							<label for="name" class="col-md-2 control-label">NAME</label>
+							<span class="col-md-10 control-label validation-err" >{{ errors.name[0] }}</span>
+							<div class="col-md-12">
+								<input type="text" maxlength="40" id="name" class="form-control" data-ng-model="contact.name">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="col-md-2 control-label">EMAIL</label>
+							<span class="col-md-10 control-label validation-err" >{{ errors.email[0] }}</span>
+							<div class="col-md-12">
+								<input type="text" maxlength="40" id="email" class="form-control" data-ng-model="contact.email">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="comment" class="col-md-2 control-label">COMMENT</label>
+								<span class="col-md-10 control-label validation-err" >{{ errors.comment[0] }}</span>
+							<div class="col-md-12">
+								<textarea id="comment" maxlength="250" rows="4" class="form-control" data-ng-model="contact.comment"></textarea>
+							</div>
+						</div>
+						
+						<p>
+						<input type="submit" id="submit" value="Submit Contact" class="btn btn-primary" data-ng-disabled="inProcess"/>
+						</p>
+					</form>
+
+					<span>(Submitted to <a href="http://www.mailgun.com/" target="_blank">Mailgun Email Service</a> via my RESTful web service.)</span>
+
+					<!--
+					<iframe src="http://www.qontacto.com/f/5494b40ba2f19c73c1000030" data-aem="tcemp@comcast.net" width="100%" height="459px" style="width:100%;height:459px;border:0;"></iframe>
+					-->
+
+				</div>
+			</div><!-- #contact -->
