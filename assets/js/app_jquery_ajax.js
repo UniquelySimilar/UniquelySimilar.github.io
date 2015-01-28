@@ -1,16 +1,19 @@
-// Display specific content (div), hide other content (div), and set menu option (link) class to 'active'
-function processContent(selectorsToHide, selectorToShow) {
-	for (i = 0; i < selectorsToHide.length; i++) {
-		$(selectorsToHide[i]).hide();
-		$(selectorsToHide[i] + "-item").removeClass("active");
-	}
+// Page load
+$(function() {
+	// Initialize menu item (link) click handlers
+	initMenuClick(".about-link", showAbout);
+	initMenuClick(".skillset-link", showSkillset);
+	initMenuClick(".demo-apps-link", showDemoApps);
+	initMenuClick(".interests-link", showInterests);
+	initMenuClick(".add-remove-images-link", showAddRemoveImages);
+	initMenuClick(".contact-link", showContact);
 
-	// Special processing for drop down menu
-	$("#misc-ui-item").removeClass("active");
-	$("#add-remove-images").removeClass("active");
+	// Display 'About' content on initial page load
+	showAbout();
+});
 
-	$(selectorToShow).show().removeClass("hide");
-	$(selectorToShow + "-item").addClass("active");
+function removeActiveClassFromMenuItems() {
+	$("[id$=-item]").removeClass("active");
 }
 
 // Initialize AJAX content path
@@ -41,35 +44,50 @@ function getAndShowAjaxContent(url) {
 function showAbout() {
 	//console.log("'showAbout()' called");
 	getAndShowAjaxContent(content_ajax_path + "about.html");
+
+	removeActiveClassFromMenuItems();
+	$('#about-item').addClass('active');
 }
 
 function showSkillset() {
 	//console.log("'showSkillset()' called");
 	getAndShowAjaxContent(content_ajax_path + "skillset.html");
+
+	removeActiveClassFromMenuItems();
+	$('#skillset-item').addClass('active');
 }
 
 function showDemoApps() {
 	//console.log("'showDemoApps()' called");
 	getAndShowAjaxContent(content_ajax_path + "demo_apps.html");
+
+	removeActiveClassFromMenuItems();
+	$('#demo-apps-item').addClass('active');
 }
 
 function showInterests() {
 	//console.log("'showInterests()' called");
 	getAndShowAjaxContent(content_ajax_path + "interests.html");
+
+	removeActiveClassFromMenuItems();
+	$('#interests-item').addClass('active');
 }
 
 function showAddRemoveImages() {
 	//console.log("'showAddRemoveImages()' called");
 	getAndShowAjaxContent(content_ajax_path + "add_remove_images.html");
 
-	// Special processing for drop down menu
+	removeActiveClassFromMenuItems();
 	$("#misc-ui-item").addClass("active");
-	$("#add-remove-images").addClass("active");
+	$("#add-remove-images-item").addClass("active");
 }
 
 function showContact() {
 	//console.log("'showContact()' called");
 	getAndShowAjaxContent(content_ajax_path + "contact.html");
+
+	removeActiveClassFromMenuItems();
+	$('#contact-item').addClass('active');
 }
 
 // Initialize menu item (link) click handlers
@@ -80,21 +98,7 @@ function initMenuClick(linkSelector, showFunction) {
 	});
 }
 
-// Page load
-$(function() {
-	// Initialize menu item (link) click handlers
-	initMenuClick(".about-link", showAbout);
-	initMenuClick(".skillset-link", showSkillset);
-	initMenuClick(".demo-apps-link", showDemoApps);
-	initMenuClick(".interests-link", showInterests);
-	initMenuClick(".add-remove-images-link", showAddRemoveImages);
-	initMenuClick(".contact-link", showContact);
-
-	// Display 'About' content on initial page load
-	showAbout();
-});
-
-/* Add/remove images processing */
+// Add/remove images processing
 var img_count = 1;
 var image_html = "<p>Uninitialized image HTML</p>";
 
@@ -133,15 +137,19 @@ function bindResetButtonClick() {
 	});
 }
 
-// Pause/resume carousel
+// Display specific content (div), hide other content (div), and set menu option (link) class to 'active'
 /*
-$( "#pause-resume-carousel-btn" ).click(function() {
-	if ( $( this ).text() == 'Pause Slide Show') {
-		$( "#test-carousel" ).carousel('pause');
-		$( this ).text('Resume Slide Show');
-	} else {
-		$( "#test-carousel" ).carousel('cycle');
-		$( this ).text('Pause Slide Show');
+function processContent(selectorsToHide, selectorToShow) {
+	for (i = 0; i < selectorsToHide.length; i++) {
+		$(selectorsToHide[i]).hide();
+		$(selectorsToHide[i] + "-item").removeClass("active");
 	}
-});
+
+	// Special processing for drop down menu
+	$("#misc-ui-item").removeClass("active");
+	$("#add-remove-images").removeClass("active");
+
+	$(selectorToShow).show().removeClass("hide");
+	$(selectorToShow + "-item").addClass("active");
+}
 */
