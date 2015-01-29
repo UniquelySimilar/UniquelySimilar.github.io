@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="devInfoApp" data-ng-strict-di>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,10 +43,10 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li id="about-item"><a class="about-link" href="#">ABOUT</a></li>
-						<li id="skillset-item"><a class="skillset-link" href="#">TECH SKILLSET</a></li>
-						<li id="demo-apps-item"><a class="demo-apps-link" href="#">DEMO APPS</a></li>
-						<li id="interests-item"><a class="interests-link" href="#">INTERESTS</a></li>
+						<li id="about-item"><a class="about-link" href="#about">ABOUT</a></li>
+						<li id="skillset-item"><a class="skillset-link" href="#skillset">TECH SKILLSET</a></li>
+						<li id="demo-apps-item"><a class="demo-apps-link" href="#demoapps">DEMO APPS</a></li>
+						<li id="interests-item"><a class="interests-link" href="#interests">INTERESTS</a></li>
 
 						<li id="misc-ui-item" class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MISC UI EXAMPLES <span class="caret"></span></a>
@@ -57,7 +57,7 @@
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">
-						<li id="contact-item"><a class="contact-link" href="#">CONTACT</a></li>
+						<li id="contact-item"><a class="contact-link" href="#contact">CONTACT</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -65,22 +65,23 @@
 	</div>
 
 		<div id="main" class="container">
-
+			<div data-ng-view></div>
 		</div><!-- .container -->
 
 		<!-- Footer -->
 
-		<!-- Angular -->
-		<script src="assets/lib/angular/angular.js"></script>
-
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="assets/lib/jquery/jquery-1.11.1.js"></script>
 		
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<!-- Bootstrap -->
 		<script src="assets/lib/bootstrap-3.1.1/js/bootstrap.js"></script>
 
+		<!-- Angular -->
+		<script src="assets/lib/angular/angular.js"></script>
+		<script src="assets/lib/angular/angular-route.js"></script>
+
 		<!-- App specific JavaScript -->
-		<script src="assets/js/contact_angular.js"></script>
-		<script src="assets/js/app_jquery_ajax.js"></script>
+		<script src="app/app.module.js"></script>
+		<!--<script src="assets/js/contact_angular.js"></script>-->
 	</body>
 </html>

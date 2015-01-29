@@ -1,5 +1,4 @@
-/* clear.css */
-
+/* app.css */
 #heading {
 	background-image: url("../images/drop-of-water-crop-top-1366x151.jpg");
 	background-repeat: no-repeat;
@@ -13,6 +12,11 @@
 #heading-title h1 {
 	margin-top: 0;
 	padding-top: 20px;
+}
+
+/* Needed to compensate for not using 'href' in nav tabs */
+.nav, .pagination, .carousel, .panel-title a {
+	cursor: pointer;
 }
 
 /* navbar */
