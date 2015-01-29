@@ -10,8 +10,8 @@
 							<li>Reset the page by removing all image divs from the container div.</li>
 						</ul>
 					</p>
-					<button id="add-image" class="btn btn-default" type="button">Add Image</button>
-					<button id="reset-page" class="btn btn-default" type="button">Reset Page</button>
+					<button id="add-image" class="btn btn-default" type="button" data-ng-click="addImage()">Add Image</button>
+					<button id="reset-page" class="btn btn-default" type="button" data-ng-click="resetPage()">Reset Page</button>
 				</div>
-				<div id="images-div"></div>
+				<div id="images-div" data-ng-repeat="image in images"></div>
 			</div><!-- #add-remove-images -->
