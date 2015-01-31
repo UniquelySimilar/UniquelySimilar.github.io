@@ -21,9 +21,9 @@ devInfoApp.config( function($routeProvider) {
 		templateUrl : '../pages/views/interests.html',
 		controller  : 'interestsController'
 	})
-	.when('/addremoveimages', {
-		templateUrl : '../pages/views/add_remove_images.html',
-		controller  : 'addRemoveImagesController'
+	.when('/images', {
+		templateUrl : '../pages/views/images.html',
+		controller  : 'imagesController'
 	})
 	.when('/contact', {
 		templateUrl : '../pages/views/contact.html',
@@ -47,28 +47,32 @@ devInfoApp.controller('demoAppsController', ['$scope', function($scope) {
 devInfoApp.controller('interestsController', ['$scope', function($scope) {
 }]);
 
-devInfoApp.controller('addRemoveImagesController', ['$scope', '$http', function($scope, $http) {
+devInfoApp.controller('imagesController', ['$scope', function($scope) {
 	// Add/remove images processing
-	$scope.img_count = 1;
-	$scope.image_html = "<p>Uninitialized image HTML</p>";
-	$scope.images = [];
-
-	$http.get('../pages/views/image_container.html').
-	success(function(data, status) {
-		$scope.image_html = data;
-		//console.log($scope.image_html);
-	}).
-	error(function(data, status) {
-		console.error("addRemoveImagesController '$http.get()' failed.")
-	});
+	$scope.image_count = 1;
+	$scope.image_numbers = [];
 
 	$scope.addImage = function() {
-		console.log("addRemoveImagesController 'addImage()' called.");
-//		$scope.images.push($scope.image_html);
+		//console.log("imagesController 'addImage()' called.");
+		$scope.image_numbers.push($scope.image_count++);
+	};
+
+	$scope.removeImage = function(number) {
+		//console.log("imagesController 'removeImage()' called with number " + number);
+		// Remove the associated object from the image array
+		var i = $scope.image_numbers.indexOf(number);
+		if(i != -1) {
+			$scope.image_numbers.splice(i, 1);
+		}
 	};
 
 	$scope.resetPage = function() {
-		console.log("addRemoveImagesController 'resetPage()' called.");
+		//console.log("imagesController 'resetPage()' called.");
+		while($scope.image_numbers.length > 0) {
+			$scope.image_numbers.pop();
+		}
+
+		$scope.image_count = 1;
 	};
 }]);
 
@@ -109,27 +113,3 @@ devInfoApp.controller('contactController', [ '$scope', '$http', '$timeout', func
 	};
 
 }]);
-
-// Bind 'Add' button on 'Add/Remove Images' page
-function bindAddButtonClick() {
-	$( '#add-image' ).click( function() {
-		var btn_id = "btn-" + img_count;
-		$('#images-div').append(image_html)
-		.find('button').last().attr('id', btn_id);
-
-		$('#images-div').find('.image-title').last().text('Image ' + img_count);
-
-		$("#" + btn_id).click( function() {
-			$(this).parent().parent().remove();
-		});
-		img_count++;
-	});	
-}
-
-// Bind 'Reset' button on 'Add/Remove Images' page
-function bindResetButtonClick() {
-	$( '#reset-page' ).click( function() {
-		$('#images-div').empty();
-		img_count = 1;
-	});
-}

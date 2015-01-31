@@ -13,5 +13,14 @@
 					<button id="add-image" class="btn btn-default" type="button" data-ng-click="addImage()">Add Image</button>
 					<button id="reset-page" class="btn btn-default" type="button" data-ng-click="resetPage()">Reset Page</button>
 				</div>
-				<div id="images-div" data-ng-repeat="image in images"></div>
+				<div id="images-div">
+					<div class='image-container' data-ng-repeat='image_number in image_numbers track by $index'>
+						<div class='clearfix'>
+							<span class='image-title'>Image {{ image_number }}</span>
+							<button class='btn btn-info btn-xs pull-right' type='button'
+							 data-toggle='tooltip' data-placement='right' title='Remove Image' data-ng-click='removeImage(image_number)'>X</button>
+						</div>
+						<img src='/assets/images/jquery-icon.jpg' alt='jQuery icon'></img>
+					</div>
+				</div>
 			</div><!-- #add-remove-images -->
