@@ -19,19 +19,43 @@
 						<p>My preference is contract/contract-to-hire employment with small to medium sized companies.  However, I am open to discussing any potentially interesting opportunity.</p>
 				</div>
 				<div class="col-md-offset-1 col-md-3" id="about-tim">
-					<h3>About Tim</h3>
-					<img src="assets/images/tim_cubicle.jpg" alt="Tim Coveney">
-					<p>
-						Originally from Dallas, Texas, with a BSEE from UT Austin, I have lived in Colorado for about 15 years.&nbsp;&nbsp;Played guitar in blues/rock garage bands back in the day.&nbsp;&nbsp;Ski occasionally.
-					</p>
-					<p>
-						I'm interested in topics like conscious business, social entrepreneurship, and sustainability.
-					</p>
-					<p>
-						See my <a href="https://github.com/UniquelySimilar" target="_BLANK">GitHub Account</a> for projects and code samples.<br />
-					</p>
-					<p>
-						Please <a class="contact-link" href="#">Contact</a> me for more information.
-					</p>
+					<!--<h3>About Tim</h3>-->
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a data-target="#tim" aria-controls="tim" role="tab" data-toggle="tab">About Tim</a>
+						</li>
+						<li role="presentation">
+							<a data-target="#website" aria-controls="website" role="tab" data-toggle="tab">About This Site</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="tim">
+							<img src="assets/images/tim_cubicle.jpg" alt="Tim Coveney">
+							<p>
+								Originally from Dallas, Texas, with a BSEE from UT Austin, I have lived in Colorado for about 15 years.&nbsp;&nbsp;Played guitar in blues/rock garage bands back in the day.&nbsp;&nbsp;Ski occasionally.
+							</p>
+							<p>
+								I'm interested in topics like conscious business, social entrepreneurship, and sustainability.
+							</p>
+							<p>
+								See my <a href="https://github.com/UniquelySimilar" target="_BLANK">GitHub Account</a> for projects and code samples.<br />
+							</p>
+							<p>
+								Please <a class="contact-link" href="#contact">Contact</a> me for more information.
+							</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="website">
+							<p>This website is a <b>Single Page Application</b> developed with <b>AngularJS</b>.</p>
+							<p>The UI was built with <b>Bootstrap</b>, including <b>jQuery plugins</b>.</p>
+							<p>My development environment is <b>Ubuntu Linux</b> running in <b>VirtualBox</b> on a <b>Windows 8.1</b> laptop.</p>
+							<p>My development web server is <b>Apache HTTP Server.</b></p>
+							<p>On the <a class="contact-link" href="#contact">Contact</a> page, the form is submitted to my <b>RESTful web service</b> hosted on <b>Heroku</b>, which validates the request and then POSTs it to the <b>Mailgun RESTful API</b>, sending me the contact information via email.
+						</div>
+					</div>
+
 				</div>
 			</div><!-- #about -->

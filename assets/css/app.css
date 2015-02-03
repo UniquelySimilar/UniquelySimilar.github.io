@@ -95,6 +95,10 @@
 	margin-bottom: 10px;
 }
 
+div#website p:first-child {
+	margin-top: 10px;
+}
+
 /* Unordered list */
 .icon-list li {
 	padding: 0 0 5px 20px;
