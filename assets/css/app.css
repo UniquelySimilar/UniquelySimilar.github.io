@@ -95,9 +95,16 @@
 	margin-bottom: 10px;
 }
 
+div#about > div {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*
 div#website p:first-child {
 	margin-top: 10px;
 }
+*/
 
 /* Unordered list */
 .icon-list li {
@@ -187,11 +194,13 @@ div#website p:first-child {
 }
 
 /* Media queries */
+/*
 @media (max-width: 992px) {
 	#about-tim {
 		font-size: 125%;
 	}
 }
+*/
 
 @media (max-width: 768px) {
 	.navbar-default {
