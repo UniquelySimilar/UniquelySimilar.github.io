@@ -2,6 +2,7 @@
 #heading {
 	background-image: url("../images/drop-of-water-crop-top-1366x151.jpg");
 	background-repeat: no-repeat;
+	background-size : 100% auto;
 }
 
 #heading-title{
