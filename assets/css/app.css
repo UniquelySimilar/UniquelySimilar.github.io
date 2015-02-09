@@ -203,7 +203,7 @@ div#website p:first-child {
 }
 */
 
-@media (max-width: 768px) {
+@media (max-width: 1035px) {
 	.navbar-default {
 		background-color: #4078D9;
 	}
