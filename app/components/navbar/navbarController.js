@@ -8,7 +8,7 @@ devInfoApp.controller('navbarController', ['$scope', function($scope) {
 	$scope.IMAGES_OPT = 5;
 	$scope.CONTACT_OPT = 6;
 	$scope.PORTFOLIO_OPT = 7;
-	$scope.WEB_SITES_OPT = 8;
+	$scope.WEBSITES_OPT = 8;
 
 	// Menu option status array
 	$scope.menuOptStatus = [

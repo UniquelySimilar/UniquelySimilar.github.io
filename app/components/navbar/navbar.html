@@ -13,6 +13,7 @@
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse">
+					<!-- Left justified menu options -->
 					<ul class="nav navbar-nav">
 						<li id="about-item" data-ng-click="menuClicked(ABOUT_OPT)" data-ng-class="{active: isCurrentOption(ABOUT_OPT)}">
 							<a class="about-link" href="#about">ABOUT</a>
@@ -21,32 +22,41 @@
 						 data-ng-class="{active: isCurrentOption(SKILLSET_OPT)}">
 							<a class="skillset-link" href="#skillset">TECH SKILLSET</a>
 						</li>
-						<li id="demo-apps-item" data-ng-click="menuClicked(DEMOAPPS_OPT)"
-						 data-ng-class="{active: isCurrentOption(DEMOAPPS_OPT)}">
-							<a class="demo-apps-link" href="#demoapps">DEMO APPS</a>
+						<li id="portfolio-item" class="dropdown" data-ng-class="{ active: isCurrentOption(DEMOAPPS_OPT) || isCurrentOption(WEBSITES_OPT) }">
+							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PORTFOLIO <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li id="demo-apps-item" data-ng-click="menuClicked(DEMOAPPS_OPT)"
+								 data-ng-class="{active: isCurrentOption(DEMOAPPS_OPT)}">
+									<a class="demo-apps-link" href="#demoapps">DEMO APPS</a>
+								</li>
+								<li id="websites-item" data-ng-click="menuClicked(WEBSITES_OPT)"
+								 data-ng-class="{ active: isCurrentOption(WEBSITES_OPT) }">
+									<a class="websites-link" href="#websites">WEB SITES</a>
+								</li>
+							</ul>
 						</li>
 						<li id="interests-item" data-ng-click="menuClicked(INTERESTS_OPT)"
-						 data-ng-class="{active: isCurrentOption(INTERESTS_OPT)}">
+						 data-ng-class="{ active: isCurrentOption(INTERESTS_OPT) }">
 							<a class="interests-link" href="#interests">INTERESTS</a>
 						</li>
-
-						<li id="misc-ui-item" class="dropdown">
+						<li id="misc-ui-item" class="dropdown" data-ng-class="{ active: isCurrentOption(IMAGES_OPT) }">
 							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MISC UI EXAMPLES <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li id="add-remove-images-item" data-ng-click="menuClicked(IMAGES_OPT)"
-								 data-ng-class="{active: isCurrentOption(IMAGES_OPT)}">
+								 data-ng-class="{ active: isCurrentOption(IMAGES_OPT) }">
 									<a class="add-remove-images-link" href="#images">ADD/REMOVE IMAGES</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
-
+					<!-- Right justified menu options -->
 					<ul class="nav navbar-nav navbar-right">
 						<li id="contact-item" data-ng-click="menuClicked(CONTACT_OPT)"
 						 data-ng-class="{active: isCurrentOption(CONTACT_OPT)}">
 							<a class="contact-link" href="#contact">CONTACT</a>
 						</li>
 					</ul>
+
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
