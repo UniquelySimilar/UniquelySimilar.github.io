@@ -1,3 +1,5 @@
+// DEPRECATED: This file no longer used after Angular JS implementation
+
 // Page load
 $(function() {
 	// Initialize menu item (link) click handlers

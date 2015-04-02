@@ -1,3 +1,5 @@
+// DEPRECATED: This file no longer used after Angular JS implementation
+
 // Display specific content (div), hide other content (div), and set menu option (link) class to 'active'
 function processContent(selectorsToHide, selectorToShow) {
 	for (i = 0; i < selectorsToHide.length; i++) {

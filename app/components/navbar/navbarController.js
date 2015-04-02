@@ -7,9 +7,13 @@ devInfoApp.controller('navbarController', ['$scope', function($scope) {
 	$scope.MISC_UI_OPT = 4;
 	$scope.IMAGES_OPT = 5;
 	$scope.CONTACT_OPT = 6;
+	$scope.PORTFOLIO_OPT = 7;
+	$scope.WEB_SITES_OPT = 8;
 
 	// Menu option status array
 	$scope.menuOptStatus = [
+		false,
+		false,
 		false,
 		false,
 		false,
