@@ -183,6 +183,29 @@ div#website p:first-child {
 	box-shadow: 5px 5px 5px #888888;
 }
 
+/* Overlay Bootstrap extension overrides */
+.thumbnail #caption-up {
+	transition-duration: 0s;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.thumbnail a {
+	text-decoration: none;
+}
+
+.thumbnail a:link,
+.thumbnail a:visited {
+    color: LightGray;
+}
+
+.thumbnail a:hover,
+.thumbnail a:active {
+    color: White;
+}
+
 /* Miscellaneous */
 .big-font {
 	font-size: 125%;
