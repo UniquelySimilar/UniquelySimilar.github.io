@@ -29,47 +29,22 @@
 
 #navbar a {
 	background-color: transparent;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	color: black;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-	color: black;
-}
-
-.navbar-default .navbar-nav > li > a {
 	color: white;	
+}
+
+#navbar .active > a,
+#navbar .active > a:focus {
+	color: black;
+}
+
+#navbar a:hover {
+	color: black;
 }
 
 
 /* Dropdown menu */
 .dropdown-menu {
 	background-color: #4078D9;
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	color: white;
-}
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-	color: black;
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-	color: black;
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-	color: black;
 }
 
 

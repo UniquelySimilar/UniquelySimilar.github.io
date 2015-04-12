@@ -20,45 +20,45 @@
 				<div id="navbar" class="collapse navbar-collapse">
 					<!-- Left justified menu options -->
 					<ul class="nav navbar-nav">
-						<li id="about-item" data-ng-click="menuClicked(ABOUT_OPT)" data-ng-class="{active: isCurrentOption(ABOUT_OPT)}">
-							<a class="about-link" href="#about">ABOUT</a>
+						<li data-ng-click="menuClicked(ABOUT_OPT)" data-ng-class="{active: isCurrentOption(ABOUT_OPT)}">
+							<a href="#about">ABOUT</a>
 						</li>
-						<li id="skillset-item" data-ng-click="menuClicked(SKILLSET_OPT)"
+						<li data-ng-click="menuClicked(SKILLSET_OPT)"
 						 data-ng-class="{active: isCurrentOption(SKILLSET_OPT)}">
-							<a class="skillset-link" href="#skillset">TECH SKILLSET</a>
+							<a href="#skillset">TECH SKILLSET</a>
 						</li>
-						<li id="portfolio-item" class="dropdown" data-ng-class="{ active: isCurrentOption(DEMOAPPS_OPT) || isCurrentOption(WEBSITES_OPT) }">
+						<li class="dropdown" data-ng-class="{ active: isCurrentOption(DEMOAPPS_OPT) || isCurrentOption(WEBSITES_OPT) }">
 							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PORTFOLIO <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li id="demo-apps-item" data-ng-click="menuClicked(DEMOAPPS_OPT)"
+								<li data-ng-click="menuClicked(DEMOAPPS_OPT)"
 								 data-ng-class="{active: isCurrentOption(DEMOAPPS_OPT)}">
-									<a class="demo-apps-link" href="#demoapps">DEMO APPS</a>
+									<a href="#demoapps">DEMO APPS</a>
 								</li>
-								<li id="websites-item" data-ng-click="menuClicked(WEBSITES_OPT)"
+								<li data-ng-click="menuClicked(WEBSITES_OPT)"
 								 data-ng-class="{ active: isCurrentOption(WEBSITES_OPT) }">
-									<a class="websites-link" href="#websites">WEB SITES</a>
+									<a href="#websites">WEB SITES</a>
 								</li>
 							</ul>
 						</li>
-						<li id="interests-item" data-ng-click="menuClicked(INTERESTS_OPT)"
+						<li data-ng-click="menuClicked(INTERESTS_OPT)"
 						 data-ng-class="{ active: isCurrentOption(INTERESTS_OPT) }">
-							<a class="interests-link" href="#interests">INTERESTS</a>
+							<a href="#interests">INTERESTS</a>
 						</li>
-						<li id="misc-ui-item" class="dropdown" data-ng-class="{ active: isCurrentOption(IMAGES_OPT) }">
+						<li class="dropdown" data-ng-class="{ active: isCurrentOption(IMAGES_OPT) }">
 							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MISC UI EXAMPLES <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li id="add-remove-images-item" data-ng-click="menuClicked(IMAGES_OPT)"
+								<li data-ng-click="menuClicked(IMAGES_OPT)"
 								 data-ng-class="{ active: isCurrentOption(IMAGES_OPT) }">
-									<a class="add-remove-images-link" href="#images">ADD/REMOVE IMAGES</a>
+									<a href="#images">ADD/REMOVE IMAGES</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 					<!-- Right justified menu options -->
 					<ul class="nav navbar-nav navbar-right">
-						<li id="contact-item" data-ng-click="menuClicked(CONTACT_OPT)"
+						<li data-ng-click="menuClicked(CONTACT_OPT)"
 						 data-ng-class="{active: isCurrentOption(CONTACT_OPT)}">
-							<a class="contact-link" href="#contact">CONTACT</a>
+							<a href="#contact">CONTACT</a>
 						</li>
 					</ul>
 
