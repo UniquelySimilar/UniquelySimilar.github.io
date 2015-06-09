@@ -8,7 +8,17 @@
 	padding-bottom: 20px;
 }
 
-#heading-title{
+#heading-img-credit {
+	color: #FF9900;
+	text-align: right;
+}
+
+#heading-img-credit a {
+	color: #FF9900;
+	text-decoration: none;
+}
+
+#heading-title {
 	text-align: center;
 	color: white;
 }
