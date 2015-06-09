@@ -1,8 +1,11 @@
 /* app.css */
 .navbar {
-	background-image: url("../images/drop-of-water-1920x1328.jpg");
+	background-image: url("../images/forest-cropped.jpg");
+	/*background-image: url("../images/drop-of-water-1920x1328.jpg");*/
 	background-repeat: no-repeat;
 	/*background-size : 100% auto;*/
+	margin-bottom: 0;
+	padding-bottom: 20px;
 }
 
 #heading-title{
@@ -34,17 +37,21 @@
 
 #navbar .active > a,
 #navbar .active > a:focus {
-	color: black;
+	color: #FF9900;
+	/*color: black;*/
 }
 
 #navbar a:hover {
-	color: black;
+	color: #FF9900;
+	/*color: black;*/
 }
 
 
 /* Dropdown menu */
 .dropdown-menu {
-	background-color: #4078D9;
+	background-image: url("../images/forest-menu-bg.jpg");
+	/*background-color: #006600;*/
+	/*background-color: #4078D9;*/
 }
 
 
@@ -195,7 +202,8 @@ div#about > div {
 
 
 /* Media queries */
-/*
 @media (max-width: 1034px) {
+	.dropdown-menu {
+		background-image: none;
+	}
 }
-*/
