@@ -1,9 +1,7 @@
 /* app.css */
 .navbar {
 	background-image: url("../images/forest-cropped.jpg");
-	/*background-image: url("../images/drop-of-water-1920x1328.jpg");*/
-	background-repeat: no-repeat;
-	/*background-size : 100% auto;*/
+	background-size : 100% auto;
 	margin-bottom: 0;
 	padding-bottom: 20px;
 }
