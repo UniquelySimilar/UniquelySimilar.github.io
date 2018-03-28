@@ -18,17 +18,9 @@ devInfoApp.config( function($routeProvider) {
 		templateUrl : 'app/components/websites/websites.html',
 		controller  : 'websitesController'
 	})
-	.when('/interests', {
-		templateUrl : 'app/components/interests/interests.html',
-		controller  : 'interestsController'
-	})
 	.when('/images', {
 		templateUrl : 'app/components/images/images.html',
 		controller  : 'imagesController'
-	})
-	.when('/contact', {
-		templateUrl : 'app/components/contact/contact.html',
-		controller  : 'contactController'
 	})
 	.otherwise({
 		redirectTo  : '/about'
