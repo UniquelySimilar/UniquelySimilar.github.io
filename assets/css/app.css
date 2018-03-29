@@ -89,6 +89,22 @@ div#about > div {
 }
 
 
+/* Skill set */
+#skillset .panel {
+	text-align: center;
+}
+
+#skillset .panel-heading {
+	font-weight: bold;
+}
+
+#skillset .panel-body ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
 /* Unordered list */
 .icon-list li {
 	padding: 0 0 5px 20px;
@@ -131,20 +147,6 @@ div#about > div {
 	padding: 10px;
 	border: 1px solid #dddddd;
 	border-radius: 4px;
-}
-
-
-/* Contact form */
-.form-horizontal .control-label {
-	text-align:left;
-}
-
-.validation-err {
-	color:	red;
-}
-
-.submit-success {
-	color:	green;
 }
 
 
