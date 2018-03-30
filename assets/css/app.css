@@ -90,6 +90,34 @@ div#about > div {
 
 
 /* Skill set */
+.skillset-container {
+	margin: 0 auto;
+}
+
+.skill-list {
+	border: 1px solid #dddddd;
+	flex-basis: 16%;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.skill-heading {
+	font-weight: bold;
+	background-color: #f5f5f5;
+	padding: 0.8em;
+	border-bottom: 1px solid #dddddd;
+}
+
+.skill-body {
+	padding: 0.8em;
+}
+
+.skill-list ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
 #skillset .panel {
 	text-align: center;
 }
@@ -235,6 +263,13 @@ div#about > div {
 
 
 /* Media queries */
+@media only screen and (min-width: 768px) {
+	.skillset-container {
+		display: flex;
+		justify-content: space-between;
+	}	
+}
+
 @media only screen and (max-width: 1034px) {
 	.dropdown-menu {
 		background-image: none;

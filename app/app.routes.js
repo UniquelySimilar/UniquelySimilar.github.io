@@ -7,7 +7,7 @@ devInfoApp.config( function($routeProvider) {
 		controller  : 'aboutController'
 	})
 	.when('/skillset', {
-		templateUrl : 'app/components/skillset/skillset-alt.html',
+		templateUrl : 'app/components/skillset/skillset-flexbox.html',
 		controller  : 'skillsetController'
 	})
 	.when('/demoapps', {
