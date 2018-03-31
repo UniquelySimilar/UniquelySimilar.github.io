@@ -31,25 +31,9 @@
 						 data-ng-class="{active: isCurrentOption(SKILLSET_OPT)}">
 							<a href="#skillset">TECH SKILLSET</a>
 						</li>
-						<li class="dropdown" data-ng-class="{ active: isCurrentOption(DEMOAPPS_OPT) || isCurrentOption(WEBSITES_OPT) }">
-							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PORTFOLIO <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li data-ng-click="menuClicked(DEMOAPPS_OPT)"
-								 data-ng-class="{active: isCurrentOption(DEMOAPPS_OPT)}">
-									<a href="#demoapps">DEMO APPS</a>
-								</li>
-								<li data-ng-click="menuClicked(WEBSITES_OPT)"
-								 data-ng-class="{ active: isCurrentOption(WEBSITES_OPT) }">
-									<a href="#websites">WEB SITES</a>
-								</li>
-							</ul>
+						<li data-ng-click="menuClicked(WEBSITES_OPT)" data-ng-class="{ active: isCurrentOption(WEBSITES_OPT) }">
+						   <a href="#websites">PORTFOLIO</a>
 						</li>
-            <!--
-						<li data-ng-click="menuClicked(INTERESTS_OPT)"
-						 data-ng-class="{ active: isCurrentOption(INTERESTS_OPT) }">
-							<a href="#interests">INTERESTS</a>
-						</li>
-            -->
 						<li class="dropdown" data-ng-class="{ active: isCurrentOption(IMAGES_OPT) }">
 							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MISC UI EXAMPLES <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
@@ -60,14 +44,6 @@
 							</ul>
 						</li>
 					</ul>
-					<!-- Right justified menu options
-					<ul class="nav navbar-nav navbar-right">
-						<li data-ng-click="menuClicked(CONTACT_OPT)"
-						 data-ng-class="{active: isCurrentOption(CONTACT_OPT)}">
-							<a href="#contact">CONTACT</a>
-						</li>
-					</ul>
-           -->
 
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

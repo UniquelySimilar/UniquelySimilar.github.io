@@ -222,13 +222,8 @@ div#about > div {
 	transition: .5s ease;
 }
 
-#bbaz-website .overlay {
-	background-color: #96362A;
-}
-
 .portfolio-link:hover .overlay {
 	opacity: 0.7;
-	cursor: pointer;
 }
 
 .portfolio-link .text {
@@ -241,6 +236,18 @@ div#about > div {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+#bbaz-website .overlay {
+	background-color: #96362A;
+}
+
+#bbaz-website:hover .overlay {
+	cursor: pointer;
+}
+
+#laravelwebapp-index .overlay {
+	background-color: darkgray;
 }
   
 

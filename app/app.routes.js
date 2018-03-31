@@ -10,10 +10,6 @@ devInfoApp.config( function($routeProvider) {
 		templateUrl : 'app/components/skillset/skillset-flexbox.html',
 		controller  : 'skillsetController'
 	})
-	.when('/demoapps', {
-		templateUrl : 'app/components/demoapps/demo_apps.html',
-		controller  : 'demoAppsController'
-	})
 	.when('/websites', {
 		templateUrl : 'app/components/websites/websites.html',
 		controller  : 'websitesController'
