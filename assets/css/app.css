@@ -219,11 +219,12 @@ div#about > div {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: .5s ease;
+	/*transition: .2s ease;*/
 }
 
 .portfolio-link:hover .overlay {
 	opacity: 0.7;
+	background-color: #4B721B;
 }
 
 .portfolio-link .text {
@@ -238,18 +239,10 @@ div#about > div {
 	text-align: center;
 }
 
-#bbaz-website .overlay {
-	background-color: #96362A;
-}
-
 #bbaz-website:hover .overlay {
 	cursor: pointer;
 }
 
-#laravelwebapp-index .overlay {
-	background-color: darkgray;
-}
-  
 
 /* Overlay Bootstrap extension overrides */
 /* Used for website portfolio image captions */
