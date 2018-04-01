@@ -4,6 +4,8 @@
 	background-size : 100% auto;
 	margin-bottom: 0;
 	padding-bottom: 20px;
+	border-style: none;
+	border-radius: 0;
 }
 
 #heading-img-credit {
