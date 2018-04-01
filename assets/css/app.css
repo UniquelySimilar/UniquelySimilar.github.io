@@ -107,9 +107,8 @@ div#about > div {
 
 .skill-list {
 	border: 1px solid #FF9900;
-	flex-basis: 16%;
+	flex: 1;
 	text-align: center;
-	margin-top: 1em;
 	background-color: #FFE0B3;
 }
 
@@ -324,7 +323,6 @@ div#about > div {
 @media only screen and (min-width: 768px) {
 	.skillset-container {
 		display: flex;
-		justify-content: space-between;
 	}	
 }
 
