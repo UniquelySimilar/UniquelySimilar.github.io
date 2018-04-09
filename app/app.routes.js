@@ -14,10 +14,6 @@ devInfoApp.config( function($routeProvider) {
 		templateUrl : 'app/components/websites/websites.html',
 		controller  : 'websitesController'
 	})
-	.when('/images', {
-		templateUrl : 'app/components/images/images.html',
-		controller  : 'imagesController'
-	})
 	.otherwise({
 		redirectTo  : '/about'
 	});
