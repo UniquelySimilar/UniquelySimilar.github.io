@@ -332,9 +332,25 @@ div#about > div {
 	}
 }
 
-@media only screen and (min-width : 1900px) {
+@media only screen and (min-width: 1366px) {
 	body {
-		font-size: 22px;
+		font-size: 20px;
+	}
+	#heading-title h1 {
+		font-size: 1.65em;
+	}
+}
+
+@media only screen and (min-width : 1920px) {
+	body {
+		font-size: 24px;
+	}
+
+}
+
+@media only screen and (min-width : 2300px) {
+	body {
+		font-size: 28px;
 	}
 
 }
