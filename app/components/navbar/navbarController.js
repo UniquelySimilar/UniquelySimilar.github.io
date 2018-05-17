@@ -9,9 +9,11 @@ devInfoApp.controller('navbarController', ['$scope', function($scope) {
 	$scope.CONTACT_OPT = 6;
 	$scope.PORTFOLIO_OPT = 7;
 	$scope.WEBSITES_OPT = 8;
+	$scope.RESUME_OPT = 9;
 
 	// Menu option status array
 	$scope.menuOptStatus = [
+		false,
 		false,
 		false,
 		false,
